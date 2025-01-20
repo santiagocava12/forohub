@@ -1,0 +1,9 @@
+CREATE TABLE topicos (
+    id SERIAL PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL,
+    mensaje TEXT NOT NULL,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    estado VARCHAR(20) NOT NULL,
+    autor VARCHAR(50) NOT NULL,
+    curso VARCHAR(100) NOT NULL
+);
